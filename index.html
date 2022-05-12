@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services Edit - Laundryin</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      margin-top: 40px;
+      margin-right: 35px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="dashboard-user.html" style="padding-left: 45%;">Laundry.in</a>
+        </button>
+      </div>
+      <div class="d-flex dropdown">
+        <img src="img/user (1).png" style="height:40px; padding-right:30px; cursor: pointer;">
+        <div class="dropdown-content">
+          <a href="profile.html">Profile</a>
+          <a href="order-history.html">Order History</a>
+          <a href="login.html">Sign Out</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div style="padding-left: 100px; padding-right: 100px; padding-top: 50px;">
+    <h3>Services Pricelist Edit</h3>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Type</th>
+          <th scope="col">Duration</th>
+          <th scope="col">Price</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-active">
+          <th scope="row">Laundry</th>
+          <td>3-5 days</td>
+          <td>IDR 35k/kg</td>
+          <td>
+            <a href="#">
+              <button type="button" class="btn btn-primary btn-lg">Edit</button>
+            </a>
+            <a href="#">
+              <button type="button" class="btn btn-dark btn-lg" style="margin-left: 10px;">Delete</button>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Dry Cleaning</th>
+          <td>2-3 days</td>
+          <td>IDR 50k/kg</td>
+          <td>
+            <a href="#">
+              <button type="button" class="btn btn-primary btn-lg">Edit</button>
+            </a>
+            <a href="#">
+              <button type="button" class="btn btn-dark btn-lg" style="margin-left: 10px;">Delete</button>
+            </a>
+          </td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">Pressing</th>
+          <td>1-3 days</td>
+          <td>IDR 25k/kg</td>
+          <td>
+            <a href="#">
+              <button type="button" class="btn btn-primary btn-lg">Edit</button>
+            </a>
+            <a href="#">
+              <button type="button" class="btn btn-dark btn-lg" style="margin-left: 10px;">Delete</button>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="edit.html">
+      <button type="button" class="btn btn-primary btn-lg" style="margin-left: 45%;">Add more</button>
+    </a>
+    <br><br>
+  </div>
+</body>
+</html>
